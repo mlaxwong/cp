@@ -11,6 +11,11 @@
     "config": {
         "sort-packages": true
     },
+    "autoload": {
+        "psr-4": {
+            "paw\\cp\\": "src/"
+        }
+    },
     "require": {
         "mlaxwong/paw": "^1.0",
         "mlaxwong/paw-bootstrap4": "^1.0"
