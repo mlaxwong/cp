@@ -6,7 +6,13 @@ use Yii;
 class Module extends \yii\base\Module
 {
     public $layout = '@pawcp_base/templates/_layouts/cp.twig';
-    protected $_viewPath = __DIR__ . '/templates';
+    
+    public $theme = [
+        'asset' => \paw\cp\assets\CPAsset::class
+    ];
+
+    protected $_viewPath = __DIR__ . '/templates';  
+
 
     public function getViewPath()
     {
