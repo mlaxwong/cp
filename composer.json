@@ -1,0 +1,15 @@
+{
+    "name": "mlaxwong/paw-cp",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mlax Wong",
+            "email": "mlaxwong@gmail.com"
+        }
+    ],
+    "require": {
+        "mlaxwong/paw": "dev-master",
+        "mlaxwong/paw-bootstrap4": "^1.0"
+    }
+}
