@@ -18,6 +18,7 @@
     },
     "require": {
         "mlaxwong/paw": "^1.0",
-        "mlaxwong/paw-bootstrap4": "^1.0"
+        "mlaxwong/paw-bootstrap4": "^1.0",
+        "yiisoft/yii2-twig": "^2.2"
     }
 }
