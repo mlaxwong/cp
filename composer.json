@@ -12,7 +12,7 @@
         "sort-packages": true
     },
     "require": {
-        "mlaxwong/paw": "1.0.0-beta",
+        "mlaxwong/paw": "^1.0",
         "mlaxwong/paw-bootstrap4": "^1.0"
     }
 }
