@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9322c9963c98e254429e0129dfb61fc7",
+    "content-hash": "79ab765216fa539096cc7ccc875fa21a",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -271,7 +271,7 @@
         },
         {
             "name": "mlaxwong/paw",
-            "version": "dev-master",
+            "version": "1.0.0-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw.git",
@@ -892,7 +892,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mlaxwong/paw": 20
+        "mlaxwong/paw": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

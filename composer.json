@@ -8,8 +8,11 @@
             "email": "mlaxwong@gmail.com"
         }
     ],
+    "config": {
+        "sort-packages": true
+    },
     "require": {
-        "mlaxwong/paw": "dev-master",
+        "mlaxwong/paw": "1.0.0-beta",
         "mlaxwong/paw-bootstrap4": "^1.0"
     }
 }
