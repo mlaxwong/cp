@@ -1,20 +1,22 @@
 <?php
 namespace paw\cp\assets;
 
-class CPAsset extends \yii\web\AssetBundle
+use yii\web\AssetBundle;
+
+class CPAsset extends AssetBundle
 {
-    public $sourcePath = '@pawcp_root/static';
+    public $sourcePath = '@pawcp_root/dist';
 
     public $css = [
-        'dist/cp.css'
+        'asset.cp.css'
     ];
 
     public $js = [
-        ['js/vue.js', 'position' => \yii\web\View::POS_HEAD],
-        'dist/cp.js',
+        'asset.cp.js',
     ];
 
     public $depends = [
-        \paw\bootstrap4\BootstrapAsset::class
+        \paw\bootstrap4\BootstrapAsset::class,
+        \paw\cp\assets\StaticAsset::class,
     ];
 }

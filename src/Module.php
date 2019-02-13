@@ -3,31 +3,19 @@ namespace paw\cp;
 
 use Yii;
 
-class Module extends \yii\base\Module
+class Module extends \paw\cp\base\Module
 {
-    public $layout = '@pawcp_base/templates/_layouts/cp.twig';
+    public $layout = '@pawcp_base/views/_layouts/cp.twig';
     
-    public $theme = [
-        'asset' => \paw\cp\assets\CPAsset::class
-    ];
-
-    protected $_viewPath = __DIR__ . '/templates';  
-
-
-    public function getViewPath()
-    {
-        return $this->_viewPath;
-    }
-
-    public function setViewPath($viewPath)
-    {
-        $this->_viewPath = $viewPath;
-    }
-
     public function init()
     {
+        parent::init();
+
         Yii::setAlias('@pawcp_root', dirname(__DIR__));
         Yii::setAlias('@pawcp_base', __DIR__);
-        parent::init();
+
+        $this->modules = [
+            'setting' => ['class' => \paw\cp\modules\setting\Module::class],
+        ];
     }
 }

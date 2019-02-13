@@ -1,0 +1,33 @@
+$globalSidebarWidth : 225px;
+
+.global-wrapper
+{
+    height: 100vh;
+    width: 100vh;
+    padding-left: $globalSidebarWidth;
+    position: relative;
+
+    .global-sidebar
+    {
+        width: $globalSidebarWidth;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        ul
+        {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+
+            li
+            {
+                a
+                {
+                    padding: 8px 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

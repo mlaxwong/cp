@@ -3,12 +3,17 @@
 {%- block body -%}
     <div class="global-wrapper">
         <div class="global-sidebar">
-
+            <nav>
+                <ul>
+                    <li><a href="{{ url(['/admin/']) }}">Dashboard</a></li>
+                    <li><a href="{{ url(['/admin/setting']) }}">Setting</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="main-wrapper">
             <header></header>
             <main>
-                {{- content -}}
+                {{- content | raw -}}
             </main>
         </div>
     </div>

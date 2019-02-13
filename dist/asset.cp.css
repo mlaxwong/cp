@@ -1,0 +1,17 @@
+.global-wrapper {
+  height: 100vh;
+  width: 100vh;
+  padding-left: 225px;
+  position: relative; }
+  .global-wrapper .global-sidebar {
+    width: 225px;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+    .global-wrapper .global-sidebar ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      .global-wrapper .global-sidebar ul li a {
+        padding: 8px 10px;
+        display: block; }
