@@ -1,14 +1,14 @@
 module.exports = [
   {
     entry: [
-      './static/js/cp.js',
-      './static/scss/cp.scss'
+      './src/assets/source/js/cp.js',
+      './src/assets/source/scss/cp.scss'
     ],
     output: {
-      path: './static/dist/',
+      path: './dist/',
       filename: {
-        js: 'cp.js',
-        css: 'cp.scss'
+        js: 'asset.cp.js',
+        css: 'asset.cp.css'
       }
     }
   }
