@@ -271,16 +271,16 @@
         },
         {
             "name": "mlaxwong/paw",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw.git",
-                "reference": "8d82510fac07db58580e7292b7a69e6468aa5dab"
+                "reference": "d7739078397f3f81126b23b82011ff193ca56dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/8d82510fac07db58580e7292b7a69e6468aa5dab",
-                "reference": "8d82510fac07db58580e7292b7a69e6468aa5dab",
+                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/d7739078397f3f81126b23b82011ff193ca56dce",
+                "reference": "d7739078397f3f81126b23b82011ff193ca56dce",
                 "shasum": ""
             },
             "require": {
@@ -313,7 +313,7 @@
                 }
             ],
             "description": "Paw Yii2 Framework",
-            "time": "2019-02-13T08:11:13+00:00"
+            "time": "2019-02-14T08:02:30+00:00"
         },
         {
             "name": "mlaxwong/paw-bootstrap4",
@@ -354,12 +354,12 @@
         },
         {
             "name": "npm-asset/bootstrap",
-            "version": "4.3.0",
+            "version": "4.3.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.3.0.tgz",
+                "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.3.1.tgz",
                 "reference": null,
-                "shasum": "2559ccb8d45426ac6c54db23eb3d1c9f4257fa22"
+                "shasum": "280ca8f610504d99d7b6b4bfc4b68cec601704ac"
             },
             "type": "npm-asset-library",
             "extra": {
@@ -467,7 +467,7 @@
                 "sass",
                 "web"
             ],
-            "time": "2019-02-11T19:19:32+00:00"
+            "time": "2019-02-13T16:03:49+00:00"
         },
         {
             "name": "npm-asset/bootstrap.native",
