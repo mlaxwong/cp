@@ -271,16 +271,16 @@
         },
         {
             "name": "mlaxwong/paw",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw.git",
-                "reference": "92c761b447a93a0c129daaee7fcdbfac9a1cc0cf"
+                "reference": "3fb4efe5ecd22e63bb3dd21f10d3b690ffab2634"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/92c761b447a93a0c129daaee7fcdbfac9a1cc0cf",
-                "reference": "92c761b447a93a0c129daaee7fcdbfac9a1cc0cf",
+                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/3fb4efe5ecd22e63bb3dd21f10d3b690ffab2634",
+                "reference": "3fb4efe5ecd22e63bb3dd21f10d3b690ffab2634",
                 "shasum": ""
             },
             "require": {
@@ -313,7 +313,7 @@
                 }
             ],
             "description": "Paw Yii2 Framework",
-            "time": "2019-02-15T09:59:17+00:00"
+            "time": "2019-02-16T16:21:02+00:00"
         },
         {
             "name": "mlaxwong/paw-bootstrap4",
