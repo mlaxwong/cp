@@ -1,0 +1,10 @@
+{{ setParams('fullPageForm', true) }}
+
+{% block headerActions %}
+    <button type="submit" class="btn btn-primary">{{ t('app', 'Save') }}</button>
+{% endblock %}
+
+<div class="page-setting-collection-field-form">
+    <input type="text" name="{{ html.getInputName(model, 'name') }}" />
+    <input type="text" name="{{ html.getInputName(model, 'handle') }}" />
+</div>
