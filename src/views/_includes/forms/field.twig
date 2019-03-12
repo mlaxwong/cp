@@ -1,0 +1,15 @@
+{%- set label = (label is defined and label != '__blank__' ? label : null) %}
+{%- set errors = (errors is defined ? errors : null) -%}
+
+{%- set fieldClass = [
+    'form-label-group',
+    'form-group',
+]|join(' ') %}
+
+<div class="{{ fieldClass }}">
+    {{ input|raw }}
+    <label
+        {%- if id is defined %} for="{{ id }}"{% endif %}
+        >{{ label }}</label>
+    {% include "@pawcp_base/views/_includes/forms/errors.twig" with { errors: errors } %}
+</div>

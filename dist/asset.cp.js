@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n//# sourceURL=webpack:///./src/assets/source/js/cp.js?");
+eval("\n\n(function () {\n  document.querySelector('[data-method]').onclick = function (event) {\n    event.preventDefault();\n    var data = event.target.dataset;\n    var method = data.method || 'post';\n    var params = data.params || [];\n    var url = event.target.href;\n    customrequest(method, url, params);\n  };\n\n  var customrequest = function customrequest(method, url, params) {\n    params = isJson(params) ? JSON.parse(params) : params;\n    var form = document.createElement('form');\n    form.setAttribute('method', method);\n    form.setAttribute('action', url);\n    for (var key in params) {\n      if (params.hasOwnProperty(key)) {\n        var hiddenField = document.createElement('input');\n        hiddenField.setAttribute('type', 'hidden');\n        hiddenField.setAttribute('name', key);\n        hiddenField.setAttribute('value', params[key]);\n\n        form.appendChild(hiddenField);\n      }\n    }\n    document.body.appendChild(form);\n    form.submit();\n  };\n\n  var isJson = function isJson(str) {\n    try {\n      JSON.parse(str);\n    } catch (e) {\n      return false;\n    }\n    return true;\n  };\n})();\n\n//# sourceURL=webpack:///./src/assets/source/js/cp.js?");
 
 /***/ }),
 

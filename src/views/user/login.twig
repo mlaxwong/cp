@@ -1,0 +1,14 @@
+{{ set(this.context, 'layout', 'cp-clean') }}
+
+{% import "@pawcp_base/views/_includes/forms.twig" as forms %}
+
+<div class="container h-100 d-flex justify-content-center">
+    <div class="my-auto col-lg-4 col-md-8">
+        <form method="POST" novalidate="true">
+            {{ forms.csrf() }}
+            {{ forms.activeTextField(model, 'username') }}
+            {{ forms.activeTextField(model, 'password', {type: 'password'}) }}
+            <button type="submit" class="btn btn-primary btn-block">{{ 'Login'|t('app') }}</button>
+        </form>
+    </div>
+</div>

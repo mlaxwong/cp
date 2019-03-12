@@ -9,6 +9,7 @@
                 <ul>
                     <li><a href="{{ url(['/admin/']) }}">Dashboard</a></li>
                     <li><a href="{{ url(['/admin/setting']) }}">Setting</a></li>
+                    <li><a href="{{ url(['/admin/user/logout']) }}" data-method="post" data-params="{{ csrfData()|json_encode() }}">Logout</a></li>
                 </ul>
             </nav>
         </div>
