@@ -1,11 +1,8 @@
-<ul>
-    <li>
-        <a href="{{ url(['/admin/setting/section']) }}">{{ t('app', 'Section') }}</a>
-    </li>
-    <li>
-        <a href="{{ url(['/admin/setting/collection-type']) }}">{{ t('app', 'Collection') }}</a>
-    </li>
-    <li>
-        <a href="{{ url(['/admin/setting/collection-field']) }}">{{ t('app', 'Field') }}</a>
-    </li>
-</ul>
+{{ set(this, 'title', 'Setting'|t('app')) }}
+
+{{- setParams('crumbs', [
+    {label:'Setting'|t('app'), url:url(['/admin/setting'])}, 
+    {label:'General'|t('app'), url:url(['/admin/setting/default'])}, 
+]) -}}
+
+{% include "@pawcp_base/modules/setting/views/_includes/sidebar.twig" %}

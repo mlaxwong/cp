@@ -3,6 +3,7 @@ namespace paw\cp;
 
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\ArrayHelper;
 use paw\rbac\Role;
 
 class Module extends \paw\cp\base\Module
@@ -39,7 +40,12 @@ class Module extends \paw\cp\base\Module
         Yii::setAlias('@pawcp_root', dirname(__DIR__));
         Yii::setAlias('@pawcp_base', __DIR__);
 
-        $this->modules = [
+        $this->modules = ArrayHelper::merge($this->getBuildInModule(), $this->modules);
+    }
+
+    protected function getBuildInModule()
+    {
+        return [
             'setting' => ['class' => \paw\cp\modules\setting\Module::class],
         ];
     }

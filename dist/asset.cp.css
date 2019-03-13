@@ -1,20 +1,64 @@
 body, html {
-  height: 100%; }
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%; }
 
-.global-wrapper {
-  height: 100vh;
-  width: 100vh;
-  padding-left: 225px;
-  position: relative; }
-  .global-wrapper .global-sidebar {
-    width: 225px;
-    position: absolute;
-    left: 0px;
-    top: 0px; }
-    .global-wrapper .global-sidebar ul {
-      list-style: none;
+body {
+  display: flex; }
+
+div.global-wrapper > aside.global-sidebar-wrapper {
+  width: 225px;
+  overflow: auto; }
+
+div.global-wrapper > main > form {
+  min-height: 0px; }
+
+div.global-wrapper > main > header > div.master-header > div.top-header, div.global-wrapper > main > form > header > div.master-header > div.top-header {
+  background-color: #fafafa; }
+  div.global-wrapper > main > header > div.master-header > div.top-header nav, div.global-wrapper > main > form > header > div.master-header > div.top-header nav {
+    font-size: .7em;
+    padding: 5px 10px; }
+    div.global-wrapper > main > header > div.master-header > div.top-header nav ol, div.global-wrapper > main > form > header > div.master-header > div.top-header nav ol {
       padding: 0px;
       margin: 0px; }
-      .global-wrapper .global-sidebar ul li a {
-        padding: 8px 10px;
-        display: block; }
+  div.global-wrapper > main > header > div.master-header > div.top-header h1, div.global-wrapper > main > form > header > div.master-header > div.top-header h1 {
+    font-size: 1.8em;
+    padding: 8px 10px;
+    padding-top: 0px;
+    margin: 0px; }
+  div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu {
+    font-size: .8em;
+    padding-right: 10px; }
+    div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu div.dropdown a.dropdown-toggle:after, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu div.dropdown a.dropdown-toggle:after {
+      display: none; }
+    div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu div.dropdown div.dropdown-menu, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu div.dropdown div.dropdown-menu {
+      left: auto;
+      right: 0px;
+      padding: 10px; }
+
+div.global-wrapper > main > div.main-content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper {
+  min-height: 0; }
+  div.global-wrapper > main > div.main-content-wrapper > div.sidebar-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.sidebar-wrapper {
+    background-color: #fafafa;
+    overflow: auto; }
+    div.global-wrapper > main > div.main-content-wrapper > div.sidebar-wrapper > div.sidebar, div.global-wrapper > main > form > div.main-content-wrapper > div.sidebar-wrapper > div.sidebar {
+      font-size: .9em;
+      width: 150px; }
+  div.global-wrapper > main > div.main-content-wrapper > div.main-content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content {
+    min-height: 0px; }
+    div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.actions-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.actions-bar {
+      padding: 10px; }
+    div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper {
+      overflow: auto; }
+      div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content {
+        padding: 10px; }
+  div.global-wrapper > main > div.main-content-wrapper > div.details-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.details-wrapper {
+    overflow: auto; }
+
+.no-outline, .no-outline:focus {
+  outline: none;
+  box-shadow: none; }
+
+.no-backgound-color {
+  background-color: transparent; }

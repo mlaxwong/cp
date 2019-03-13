@@ -1,0 +1,18 @@
+{{ beginBlock('sidebar') }}
+
+{% import "@pawcp_base/views/_includes/nav.twig" as nav %}
+
+{% set sidebarMenuItem = [
+    {
+        label: 'General'|t('app'),
+        url: url(['/admin/setting/default']),
+    },
+    {
+        label: 'User'|t('app'),
+        url: url(['/admin/setting/user']),
+    },
+] %}
+
+{{ nav.nav(sidebarMenuItem) }}
+
+{{ endBlock() }}

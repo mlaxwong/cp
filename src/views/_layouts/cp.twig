@@ -2,41 +2,108 @@
 
 {% set fullPageForm = getParams('fullPageForm') %}
 
-{%- block body -%}
-    <div class="global-wrapper">
-        <div class="global-sidebar">
-            <nav>
-                <ul>
-                    <li><a href="{{ url(['/admin/']) }}">Dashboard</a></li>
-                    <li><a href="{{ url(['/admin/setting']) }}">Setting</a></li>
-                    <li><a href="{{ url(['/admin/user/logout']) }}" data-method="post" data-params="{{ csrfData()|json_encode() }}">Logout</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main-wrapper">
-            <header>
-                {% block header %}
-                    {% block pageTitle %}
-                        <h1>{{ this.title }}</h1>
-                    {% endblock %}
-                    {% block headerActions %}{% endblock %}
-                {% endblock %}
-            </header>
-            <main>
-                {%- if fullPageForm -%}
-                <form id="main-form" method="post" accept-charset="UTF-8">
-                <input type="hidden" name="_csrf" value="{{ app.request.getCsrfToken() }}" />
-                {% endif %}
-                <header>
+{% set crumbs = [{label:'Dashboard', url:url(['/admin'])}]|merge(getParams('crumbs', [])) %}
 
-                </header>
-                <div class="main-content">
-                    {{- content | raw -}}
+{% import "@pawcp_base/views/_includes/nav.twig" as nav %}
+
+{% set globalMenuItems = [
+    {
+        label: 'Dashboard'|t('app'),
+        url: url(['/admin']),
+    },
+    {
+        label: 'Setting'|t('app'),
+        url: url(['/admin/setting/default']),
+    },
+] %}
+
+{%- block body -%}
+    <div class="global-wrapper d-flex flex-fill">
+        <aside class="global-sidebar-wrapper d-flex border-right">
+            <div class="global-sidebar flex-fill">
+                <div class="identity-info dropdown border-bottom text-center">
+                    <h1>Intender</h1>
                 </div>
-                {% if fullPageForm %}
-                </form>
+                <nav>
+                    {{ nav.nav(globalMenuItems) }}
+                </nav>
+            </div>
+        </aside>
+        <main class="d-flex flex-fill flex-column">
+            {%- if fullPageForm -%}
+            <form class="d-flex flex-fill flex-column" id="main-form" method="post" accept-charset="UTF-8">
+            <input type="hidden" name="_csrf" value="{{ app.request.getCsrfToken() }}" />
+            {% endif %}
+            <header class="d-flex border-bottom">
+                <div class="master-header flex-fill">
+                    <div class="top-header">
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-default no-outline btn-sm"><i class="fa fa-bars"></i></button>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb no-backgound-color">
+                                    {% if crumbs %}
+                                    {% for crumb in crumbs %}
+                                    {% if loop.last %}
+                                    <li class="breadcrumb-item active">{{ crumb.label }}</li>
+                                    {% else %}
+                                    <li class="breadcrumb-item"><a href="{{ crumb.url }}">{{ crumb.label }}</a></li>
+                                    {% endif %}
+                                    {% endfor %}
+                                    {% endif %}
+                                </ol>
+                            </nav>
+                            <div class="right-menu ml-auto d-flex align-items-center">
+                                <div class="dropdown">
+                                    <a  href="#" class="no-outline dropdown-toggle" id="user-identity-tollge-button" data-toggle="dropdown">
+                                        <i class="fa fa-user"></i> {{ app.user.identity.username }}
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="user-identity-tollge-button">
+                                        <li><a href="{{ url(['/admin/user/logout']) }}" data-method="post" data-params="{{ csrfData()|json_encode() }}">Logout</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% block header %}
+                            {% block pageTitle %}
+                                <h1>{{ this.title }}</h1>
+                            {% endblock %}
+                            {% block headerActions %}{% endblock %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </header>
+            <div class="main-content-wrapper d-flex flex-fill">
+                {%- if this.blocks['sidebar'] is defined -%}
+                <div class="sidebar-wrapper d-flex">
+                    <div class="sidebar flex-fill">
+                        {{- this.blocks['sidebar']|raw -}}
+                    </div>
+                </div>
                 {% endif %}
-            </main>
-        </div>
+                <div class="main-content d-flex flex-column flex-fill">
+                    {%- if this.blocks['actions'] is defined -%}
+                    <div class="actions-bar border-bottom">
+                        {{- this.blocks['actions']|raw -}}
+                    </div>
+                    {% endif %}
+                    <div class="content-wrapper">
+                        <div class="content">
+                            {{ content|raw }}
+                            <div style="height:1900px"></div>
+                        </div>
+                        <footer>
+                            {{ 'Copyright &copy; {year} Intender all rights reserved'|t('app', {year: "now"|date('Y')})|raw }}
+                        </footer>
+                    </div>
+                </div>
+                {% if this.blocks['details'] is defined %}
+                <div class="details-wrapper d-flex">
+                    <div class="details flex-fill">
+                        {{- this.blocks['details']|raw -}}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </main>
     </div>
 {%- endblock -%}

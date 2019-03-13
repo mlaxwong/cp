@@ -1,0 +1,20 @@
+{{ set(this, 'title', 'User'|t('app')) }}
+
+{{- setParams('crumbs', [
+    {label:'Setting'|t('app'), url:url(['/admin/setting'])}, 
+    {label:'User'|t('app'), url:url(['/admin/setting/user'])},
+]) -}}
+
+{{ beginBlock('actions') }}
+<a href="{{ url(['/admin/setting/user/create']) }}" class="btn btn-sm btn-primary">{{ 'Create'|t('app') }}</a>
+{{ endBlock() }}
+
+{% include "@pawcp_base/modules/setting/views/_includes/sidebar.twig" %}
+
+<div>
+    {%- for item in app.resource.get('user').all() -%}
+    <div>
+        {{ item.username }}
+    </div>
+    {%- endfor -%}
+</div>

@@ -1,38 +1,159 @@
 $globalSidebarWidth : 225px;
+$sidebarWidth : 150px;
+$topHeaderHeight : 111px;
+$footerHeight : 15px;
 
 body, html
 {
+    padding: 0px;
+    margin: 0px;
     height: 100%;
+    width: 100%;
 }
 
-.global-wrapper
+body
 {
-    height: 100vh;
-    width: 100vh;
-    padding-left: $globalSidebarWidth;
-    position: relative;
+    display: flex;
+}
 
-    .global-sidebar
+div.global-wrapper
+{
+    & > aside.global-sidebar-wrapper
     {
         width: $globalSidebarWidth;
-        position: absolute;
-        left: 0px;
-        top: 0px;
+        overflow: auto;
+    }
 
-        ul
+    & > main
+    {
+        & > form
         {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
+            min-height: 0px;
+        }
 
-            li
+        &, & > form
+        {
+            & > header > div.master-header
             {
-                a
+                & > div.top-header
                 {
-                    padding: 8px 10px;
-                    display: block;
+                    background-color: rgba(250, 250, 250, 1);
+
+                    nav
+                    {
+                        font-size: .7em;
+                        padding: 5px 10px;
+    
+                        ol
+                        {
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                    }
+    
+                    h1
+                    {
+                        font-size: 1.8em;
+                        padding: 8px 10px;
+                        padding-top: 0px;
+                        margin: 0px;
+                    }
+
+                    div.right-menu
+                    {
+                        font-size: .8em;
+                        padding-right: 10px;
+
+                        div.dropdown
+                        {
+                            a.dropdown-toggle:after
+                            {
+                                display: none;
+                            }
+
+                            div.dropdown-menu
+                            {
+                                left: auto;
+                                right: 0px;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            & > div.main-content-wrapper
+            {
+                min-height: 0;
+    
+                & > div.sidebar-wrapper
+                {
+                    background-color: rgba(250, 250, 250, 1);
+                    overflow: auto;
+    
+                    & > div.sidebar
+                    {
+                        font-size: .9em;
+                        width: $sidebarWidth;
+                    }
+                }
+    
+                & > div.main-content
+                {
+                    min-height: 0px;
+                    // background-color: #666;
+
+                    & > div.actions-bar
+                    {
+                        padding: 10px;
+                    }
+
+                    & > div.content-wrapper
+                    {
+                        overflow: auto;
+
+                        & > div.content
+                        {
+                            padding: 10px;
+                        }
+                    }
+
+                    // & > div.content
+                    // {
+                    //     background: #fff;
+                    //     min-height: calc(100vh - #{$topHeaderHeight} - #{$footerHeight});
+                    //     padding: 10px;
+                    // }
+
+                    // & > footer
+                    // {
+                    //     color: #eee;
+                    //     font-size: .7em;
+                    //     padding: 8px 10px;
+                    // }
+                }
+    
+                & > div.details-wrapper
+                {
+                    overflow: auto;
+    
+                    & > div.details
+                    {
+    
+                    }
                 }
             }
         }
     }
+}
+
+.no-outline, .no-outline:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
+.no-backgound-color
+{
+    background-color: transparent;
 }
