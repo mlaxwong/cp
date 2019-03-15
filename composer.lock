@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21749ad82dc982072aecc95601655213",
+    "content-hash": "0e325620ace2bd8062c8e4fb40a0df62",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -351,6 +351,41 @@
                 }
             ],
             "time": "2019-02-03T17:27:29+00:00"
+        },
+        {
+            "name": "mlaxwong/paw-user",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlaxwong/paw-user.git",
+                "reference": "d0f21c2ad23af01ce9b324d38f2b6a7a35f19f4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlaxwong/paw-user/zipball/d0f21c2ad23af01ce9b324d38f2b6a7a35f19f4e",
+                "reference": "d0f21c2ad23af01ce9b324d38f2b6a7a35f19f4e",
+                "shasum": ""
+            },
+            "require": {
+                "mlaxwong/paw": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "paw\\user\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mlax Wong",
+                    "email": "mlaxwong@gmail.com"
+                }
+            ],
+            "time": "2019-03-15T06:26:09+00:00"
         },
         {
             "name": "npm-asset/bootstrap",
