@@ -1,7 +1,9 @@
 $globalSidebarWidth : 225px;
 $sidebarWidth : 150px;
-$topHeaderHeight : 111px;
-$footerHeight : 15px;
+$topHeaderHeight : 73px;
+$topActionBarHeight : 51px;
+$footerHeight : 32px;
+$zeroError : 2px;
 
 body, html
 {
@@ -115,6 +117,19 @@ div.global-wrapper
                         & > div.content
                         {
                             padding: 10px;
+                            min-height: calc(100vh - #{$topHeaderHeight} - #{$footerHeight}  - #{$zeroError});
+                            
+                            &.with-action-bar
+                            {
+                                min-height: calc(100vh - #{$topHeaderHeight} - #{$footerHeight} - #{$topActionBarHeight} - #{$zeroError});
+                            }
+                        }
+
+                        & > footer
+                        {
+                            color: #eee;
+                            font-size: .7em;
+                            padding: 8px 10px;
                         }
                     }
 
@@ -125,12 +140,7 @@ div.global-wrapper
                     //     padding: 10px;
                     // }
 
-                    // & > footer
-                    // {
-                    //     color: #eee;
-                    //     font-size: .7em;
-                    //     padding: 8px 10px;
-                    // }
+                    
                 }
     
                 & > div.details-wrapper

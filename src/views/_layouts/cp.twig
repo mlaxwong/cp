@@ -2,9 +2,16 @@
 
 {% set fullPageForm = getParams('fullPageForm') %}
 
+{% set fullPageFormOptions = getParams('fullPageFormOptions', {}) %}
+
 {% set crumbs = [{label:'Dashboard', url:url(['/admin'])}]|merge(getParams('crumbs', [])) %}
 
 {% import "@pawcp_base/views/_includes/nav.twig" as nav %}
+
+{% set contentClass = [
+    'content',
+    this.blocks['actions'] is defined ? 'with-action-bar' : null
+]|join(' ') %}
 
 {% set globalMenuItems = [
     {
@@ -31,14 +38,14 @@
         </aside>
         <main class="d-flex flex-fill flex-column">
             {%- if fullPageForm -%}
-            <form class="d-flex flex-fill flex-column" id="main-form" method="post" accept-charset="UTF-8">
+            <form class="d-flex flex-fill flex-column" id="main-form" method="post" accept-charset="UTF-8" {{ objectToAttr(fullPageFormOptions) }}>
             <input type="hidden" name="_csrf" value="{{ app.request.getCsrfToken() }}" />
             {% endif %}
             <header class="d-flex border-bottom">
                 <div class="master-header flex-fill">
                     <div class="top-header">
                         <div class="d-flex align-items-center">
-                            <button class="btn btn-default no-outline btn-sm"><i class="fa fa-bars"></i></button>
+                            <button type="button" class="btn btn-default no-outline btn-sm"><i class="fa fa-bars"></i></button>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb no-backgound-color">
                                     {% if crumbs %}
@@ -87,9 +94,8 @@
                     </div>
                     {% endif %}
                     <div class="content-wrapper">
-                        <div class="content">
+                        <div class="{{ contentClass }}">
                             {{ content|raw }}
-                            <div style="height:1900px"></div>
                         </div>
                         <footer>
                             {{ 'Copyright &copy; {year} Intender all rights reserved'|t('app', {year: "now"|date('Y')})|raw }}

@@ -52,7 +52,14 @@ div.global-wrapper > main > div.main-content-wrapper, div.global-wrapper > main 
     div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper {
       overflow: auto; }
       div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content {
-        padding: 10px; }
+        padding: 10px;
+        min-height: calc(100vh - 73px - 32px  - 2px); }
+        div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content.with-action-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content.with-action-bar {
+          min-height: calc(100vh - 73px - 32px - 51px - 2px); }
+      div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > footer, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > footer {
+        color: #eee;
+        font-size: .7em;
+        padding: 8px 10px; }
   div.global-wrapper > main > div.main-content-wrapper > div.details-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.details-wrapper {
     overflow: auto; }
 

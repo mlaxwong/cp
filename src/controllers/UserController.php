@@ -5,8 +5,8 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
-use paw\models\User;
-use paw\models\LoginForm;
+use paw\user\models\User;
+use paw\user\models\LoginForm;
 
 class UserController extends Controller
 {

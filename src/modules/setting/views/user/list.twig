@@ -11,10 +11,18 @@
 
 {% include "@pawcp_base/modules/setting/views/_includes/sidebar.twig" %}
 
-<div>
+<div class="row">
     {%- for item in app.resource.get('user').all() -%}
-    <div>
-        {{ item.username }}
+    <div class="col-12 mb-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ item.username }}
+                </h5>
+                <a href="{{ url(['/admin/setting/user/update']|merge({id: item.id})) }}" class="card-link">{{ 'Manage'|t('app') }}</a>
+                <a href="{{ url(['/admin/setting/user/delete']|merge({id: item.id})) }}" class="card-link text-danger" confirm="Are you sure?" data-method="post" data-params="{{ csrfData()|json_encode() }}">{{ 'Delete'|t('app') }}</a>
+            </div>
+        </div>
     </div>
     {%- endfor -%}
 </div>

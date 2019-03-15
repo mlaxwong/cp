@@ -1,1 +1,31 @@
-this is user manager
+{% set isCreated = isCreate ?? false %}
+
+{{ set(this, 'title', isCreate ? 'Create User'|t('app') : model.username) }}
+
+{{ setParams('fullPageForm', true) }}
+
+{{ setParams('fullPageFormOptions', {'novalidate':true}) }}
+
+{{- setParams('crumbs', [
+    {label:'Setting'|t('app'), url:url(['/admin/setting'])}, 
+    {label:'User'|t('app'), url:url(['/admin/setting/user'])},
+    {label: isCreate ? 'Create User'|t('app') : model.username}
+]) -}}
+
+{% import "@pawcp_base/views/_includes/forms.twig" as forms %}
+
+{{ beginBlock('actions') }}
+<button type="submit" class="btn btn-primary btn-sm">{{ 'Save'|t('app') }}</button>
+{{ endBlock() }}
+
+{{ forms.activeTextField(model, 'username', {disabled: isCreate == false}) }}
+
+{{ forms.activeTextField(model, 'email', {type: 'email'}) }}
+
+{{ forms.activeTextField(model, 'first_name') }}
+
+{{ forms.activeTextField(model, 'last_name') }}
+
+{{ forms.activeTextField(model, 'password', {type: 'password'}) }}
+
+{{ forms.activeTextField(model, 'password_confirm', {type: 'password'}) }}
