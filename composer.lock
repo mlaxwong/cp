@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e325620ace2bd8062c8e4fb40a0df62",
+    "content-hash": "44e11daa5c250f343be58b8ec28824b7",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -351,6 +351,42 @@
                 }
             ],
             "time": "2019-02-03T17:27:29+00:00"
+        },
+        {
+            "name": "mlaxwong/paw-storage",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlaxwong/paw-storage.git",
+                "reference": "84ede4cb6212efd6747a908f67f696f06a8592df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlaxwong/paw-storage/zipball/84ede4cb6212efd6747a908f67f696f06a8592df",
+                "reference": "84ede4cb6212efd6747a908f67f696f06a8592df",
+                "shasum": ""
+            },
+            "require": {
+                "mlaxwong/paw": "^1.1",
+                "mlaxwong/paw-user": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "paw\\storage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mlax Wong",
+                    "email": "mlaxwong@gmail.com"
+                }
+            ],
+            "time": "2019-03-18T05:37:01+00:00"
         },
         {
             "name": "mlaxwong/paw-user",

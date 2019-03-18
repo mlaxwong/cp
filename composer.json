@@ -19,6 +19,7 @@
     "require": {
         "mlaxwong/paw": "^1.1",
         "mlaxwong/paw-bootstrap4": "^1.0",
+        "mlaxwong/paw-storage": "^1.0",
         "mlaxwong/paw-user": "^1.0",
         "npm-asset/font-awesome": "^5.7",
         "yiisoft/yii2-twig": "^2.2"
