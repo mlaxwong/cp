@@ -6,6 +6,7 @@ return [
             'templateFile' => '@paw/db/views/migration-db.php',
             'migrationNamespaces' => [
                 'paw\user\migrations\db',
+                'paw\storage\migrations\db',
             ],
         ],
         'rbac-migrate' => [
@@ -13,6 +14,7 @@ return [
             'templateFile' => '@paw/db/views/migration-rbac.php',
             'migrationNamespaces' => [
                 'paw\user\migrations\rbac',
+                'paw\storage\migrations\rbac',
             ],
         ],
     ],

@@ -2,6 +2,7 @@
 return [
     'aliases' => [
         '@paw/user'   => '@vendor/mlaxwong/paw-user/src',
+        '@paw/storage'   => '@vendor/mlaxwong/paw-storage/src',
     ],
     'components' => [
         'user' => [
@@ -13,6 +14,9 @@ return [
             'namespaces' => [
                 'paw\\user\\resources'
             ],
-        ]
+        ],
+        'cp' => [
+            'class' => paw\cp\services\CP::class,
+        ],
     ]
 ];

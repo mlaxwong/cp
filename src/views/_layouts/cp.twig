@@ -13,17 +13,6 @@
     this.blocks['actions'] is defined ? 'with-action-bar' : null
 ]|join(' ') %}
 
-{% set globalMenuItems = [
-    {
-        label: 'Dashboard'|t('app'),
-        url: url(['/admin']),
-    },
-    {
-        label: 'Setting'|t('app'),
-        url: url(['/admin/setting/default']),
-    },
-] %}
-
 {%- block body -%}
     <div class="global-wrapper d-flex flex-fill">
         <aside class="global-sidebar-wrapper d-flex border-right">
@@ -32,7 +21,7 @@
                     <h1>Intender</h1>
                 </div>
                 <nav>
-                    {{ nav.nav(globalMenuItems) }}
+                    {{ nav.nav(app.cp.menus.global) }}
                 </nav>
             </div>
         </aside>

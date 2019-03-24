@@ -14,6 +14,10 @@
     {% include "@pawcp_base/views/_includes/forms/text.twig" with config only %}
 {% endmacro %}
 
+{% macro upload(config) %}
+{% include "@pawcp_base/views/_includes/forms/upload.twig" with config only %}
+{% endmacro %}
+
 
 {% macro field(config, input) %}
     {% include "@pawcp_base/views/_includes/forms/field.twig" with config|merge({ input: input }) only %}

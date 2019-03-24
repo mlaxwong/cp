@@ -271,16 +271,16 @@
         },
         {
             "name": "mlaxwong/paw",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw.git",
-                "reference": "2a8bb4ce768d633f2235890ddd7e5fde64e75660"
+                "reference": "013a1ea20ee647d3aeea63ffc2c2234cd525ee4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/2a8bb4ce768d633f2235890ddd7e5fde64e75660",
-                "reference": "2a8bb4ce768d633f2235890ddd7e5fde64e75660",
+                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/013a1ea20ee647d3aeea63ffc2c2234cd525ee4c",
+                "reference": "013a1ea20ee647d3aeea63ffc2c2234cd525ee4c",
                 "shasum": ""
             },
             "require": {
@@ -313,7 +313,7 @@
                 }
             ],
             "description": "Paw Yii2 Framework",
-            "time": "2019-03-15T17:33:03+00:00"
+            "time": "2019-03-24T11:12:07+00:00"
         },
         {
             "name": "mlaxwong/paw-bootstrap4",
@@ -354,16 +354,16 @@
         },
         {
             "name": "mlaxwong/paw-storage",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-storage.git",
-                "reference": "84ede4cb6212efd6747a908f67f696f06a8592df"
+                "reference": "54e38c805f23d5327a88e12dab3168bd03e249a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-storage/zipball/84ede4cb6212efd6747a908f67f696f06a8592df",
-                "reference": "84ede4cb6212efd6747a908f67f696f06a8592df",
+                "url": "https://api.github.com/repos/mlaxwong/paw-storage/zipball/54e38c805f23d5327a88e12dab3168bd03e249a4",
+                "reference": "54e38c805f23d5327a88e12dab3168bd03e249a4",
                 "shasum": ""
             },
             "require": {
@@ -386,20 +386,20 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-03-18T05:37:01+00:00"
+            "time": "2019-03-24T11:16:57+00:00"
         },
         {
             "name": "mlaxwong/paw-user",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-user.git",
-                "reference": "c3af317a2b141a05e932d77bd985715684ab8057"
+                "reference": "4270953631575b727563b4e89fec9a0cd721e4c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-user/zipball/c3af317a2b141a05e932d77bd985715684ab8057",
-                "reference": "c3af317a2b141a05e932d77bd985715684ab8057",
+                "url": "https://api.github.com/repos/mlaxwong/paw-user/zipball/4270953631575b727563b4e89fec9a0cd721e4c8",
+                "reference": "4270953631575b727563b4e89fec9a0cd721e4c8",
                 "shasum": ""
             },
             "require": {
@@ -421,7 +421,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-03-15T17:28:49+00:00"
+            "time": "2019-03-24T11:18:05+00:00"
         },
         {
             "name": "npm-asset/bootstrap",
@@ -956,16 +956,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.16.1",
+            "version": "2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd"
+                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/089198cced57c4b8c9545ddc56001a1bd114b2dd",
-                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
+                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1052,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-02-28T07:03:06+00:00"
+            "time": "2019-03-22T21:26:26+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",

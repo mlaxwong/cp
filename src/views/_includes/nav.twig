@@ -6,16 +6,17 @@
     {% endif %}
 
     {% for item in navigation %}
-        {% set active = app.request.absoluteUrl starts with item.url or item.url == '/' and app.request.absoluteUrl is empty %}
+        {% set url = item.url is iterable ? url(item.url) : item.url %}
+        {% set active = app.request.absoluteUrl starts with url or url == '/' and app.request.absoluteUrl is empty %}
         <li class="nav-item">
             {% set class = [
                 'nav-link',
                 active ? 'active' : null,
             ]|join(' ') %}
-            <a href="{{ item.url|trim('/') }}" class="{{ class }}">{{ item.label }}</a>
+            <a href="{{ url|trim('/') }}" class="{{ class }}">{{ item.label }}</a>
             {% if not item.children|default([]) is empty %}
                 <ul>
-                    {{ macros.nav(item.children|default([]), (parent?:'')~item.url~'/') }}
+                    {{ macros.nav(item.children|default([]), (parent?:'')~url~'/') }}
                 </ul>
             {% endif %}
         </li>
