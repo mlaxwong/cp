@@ -1,5 +1,5 @@
 $globalSidebarWidth : 225px;
-$sidebarWidth : 150px;
+$sidebarWidth : 200px;
 $topHeaderHeight : 73px;
 $topActionBarHeight : 51px;
 $footerHeight : 32px;
@@ -15,15 +15,47 @@ body, html
 
 body
 {
+    background-color: #fafafa;
     display: flex;
+}
+
+a
+{
+    color: #374656;
+}
+
+.btn
+{
+    border-radius: 0;
+}
+
+.removecaret.dropdown-toggle::after {
+    display: none;
 }
 
 div.global-wrapper
 {
+    .paper
+    {
+        background-color: #fff;
+        // box-shadow: 0 0 0 1px #e3e5e8;
+        -webkit-box-shadow: 0px 0px 13px 0px rgba(82,63,105,0.05);
+        box-shadow: 0px 0px 13px 0px rgba(82,63,105,0.05);
+    }
+
     & > aside.global-sidebar-wrapper
     {
+        color: #d7d9db;
+        font-weight: 100;
+        font-size: .9em;
+        background-color: #374656;  
         width: $globalSidebarWidth;
         overflow: auto;
+
+        a
+        {
+            color: inherit;
+        }
     }
 
     & > main
@@ -37,6 +69,8 @@ div.global-wrapper
         {
             & > header > div.master-header
             {
+                background-color: #fff;
+
                 & > div.top-header
                 {
                     background-color: rgba(250, 250, 250, 1);
@@ -50,6 +84,36 @@ div.global-wrapper
                         {
                             padding: 0px;
                             margin: 0px;
+                        }
+
+                        span.master-search
+                        {
+                            color: #999;
+                            position: relative;
+
+                            i.fa
+                            {
+                                font-size: inherit;
+                                -webkit-text-stroke: 2px #fafafa;
+                            }
+
+                            input[type=text]
+                            {
+                                font-weight: 100;
+                                border: none;
+                                background-color: transparent;
+                                outline: none;
+                                border: none !important;
+                                -webkit-box-shadow: none !important;
+                                -moz-box-shadow: none !important;
+                                box-shadow: none !important;
+
+                                &::placeholder {
+                                    font-weight: 100;
+                                }
+                            }
+
+                            
                         }
                     }
     
@@ -80,6 +144,14 @@ div.global-wrapper
                                 padding: 10px;
                             }
                         }
+                    }
+                }
+
+                & > div.action-header
+                {
+                    .page-title
+                    {
+                        font-weight: 100;
                     }
                 }
             }
@@ -116,7 +188,6 @@ div.global-wrapper
 
                         & > div.content
                         {
-                            padding: 10px;
                             min-height: calc(100vh - #{$topHeaderHeight} - #{$footerHeight}  - #{$zeroError});
                             
                             &.with-action-bar

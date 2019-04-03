@@ -10,8 +10,6 @@
 
 {% set contentClass = [
     'content',
-    'container-fluid',
-    'py-3',
     this.blocks['actions'] is defined ? 'with-action-bar' : null
 ]|join(' ') %}
 
@@ -19,8 +17,8 @@
     <div class="global-wrapper d-flex flex-fill">
         <aside class="global-sidebar-wrapper d-flex border-right">
             <div class="global-sidebar flex-fill">
-                <div class="identity-info p-3 dropdown text-center">
-                    <a href="{{ url(['/admin']) }}"><h3 class="text-left">Intender</h3></a>
+                <div class="identity-info dropdown border-bottom text-center">
+                    <h1>Intender</h1>
                 </div>
                 <nav>
                     {{ nav.nav(app.cp.menus.global) }}
@@ -35,33 +33,7 @@
             <header class="d-flex border-bottom">
                 <div class="master-header flex-fill">
                     <div class="top-header">
-                        <nav class="navbar navbar-expand-md">
-                            <div class="navbar-brand">
-                                <span class="master-search">
-                                    <i class="fa fa-search"></i>
-                                    <input type="text"  placeholder="{{ 'Search... '|t('app') }}" />
-                                </span>
-                            </div>
-                            <ul class="navbar-nav mr-auto"></ul>
-                            <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle removecaret" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="fa-stack">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ url(['/admin/setting']) }}">Account Setting</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="{{ url(['/admin/user/logout']) }}" data-method="post" data-params="{{ csrfData()|json_encode() }}">Logout</a>
-                                </div>
-                                </li>
-                            </ul>
-                        </nav>
-
-
-                        {# <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center">
                             <button type="button" class="btn btn-default no-outline btn-sm"><i class="fa fa-bars"></i></button>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb no-backgound-color">
@@ -92,32 +64,24 @@
                                 <h1>{{ this.title }}</h1>
                             {% endblock %}
                             {% block headerActions %}{% endblock %}
-                        {% endblock %} #}
+                        {% endblock %}
                     </div>
-                    {%- if this.blocks['actions'] is defined -%}
-                    <div class="action-header border-bottom container-fluid py-3">
-                        <div class="float-md-left mb-3 mb-md-0">
-                            <h3 class="page-title p-0 m-0">{{ this.title }}</h3>
-                        </div>
-                        <div class="float-md-right">
-                            {{- this.blocks['actions']|raw -}}
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    {% endif %}
                 </div>
             </header>
             <div class="main-content-wrapper d-flex flex-fill">
                 {%- if this.blocks['sidebar'] is defined -%}
                 <div class="sidebar-wrapper d-flex">
-                    <div class="sidebar flex-fill container-fluid py-3">
-                        <div class="paper">
-                            {{- this.blocks['sidebar']|raw -}}
-                        </div>
+                    <div class="sidebar flex-fill">
+                        {{- this.blocks['sidebar']|raw -}}
                     </div>
                 </div>
                 {% endif %}
                 <div class="main-content d-flex flex-column flex-fill">
+                    {%- if this.blocks['actions'] is defined -%}
+                    <div class="actions-bar border-bottom">
+                        {{- this.blocks['actions']|raw -}}
+                    </div>
+                    {% endif %}
                     <div class="content-wrapper">
                         <div class="{{ contentClass }}">
                             {{ content|raw }}
