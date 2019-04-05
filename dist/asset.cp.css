@@ -14,8 +14,26 @@ a {
 .btn {
   border-radius: 0; }
 
+.card {
+  border-radius: 0px;
+  border: none; }
+  .card .card-link {
+    font-size: .9em; }
+
 .removecaret.dropdown-toggle::after {
   display: none; }
+
+.tooltip {
+  text-align: justify;
+  font-size: .7em; }
+  .tooltip .tooltip-inner {
+    border-radius: 0; }
+
+.block-with-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
 
 div.global-wrapper .paper {
   background-color: #fff;
@@ -32,77 +50,83 @@ div.global-wrapper > aside.global-sidebar-wrapper {
   div.global-wrapper > aside.global-sidebar-wrapper a {
     color: inherit; }
 
-div.global-wrapper > main > form {
-  min-height: 0px; }
-
-div.global-wrapper > main > header > div.master-header, div.global-wrapper > main > form > header > div.master-header {
-  background-color: #fff; }
-  div.global-wrapper > main > header > div.master-header > div.top-header, div.global-wrapper > main > form > header > div.master-header > div.top-header {
-    background-color: #fafafa; }
-    div.global-wrapper > main > header > div.master-header > div.top-header nav, div.global-wrapper > main > form > header > div.master-header > div.top-header nav {
-      font-size: .7em;
-      padding: 5px 10px; }
-      div.global-wrapper > main > header > div.master-header > div.top-header nav ol, div.global-wrapper > main > form > header > div.master-header > div.top-header nav ol {
-        padding: 0px;
-        margin: 0px; }
-      div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search, div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search {
-        color: #999;
-        position: relative; }
-        div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search i.fa, div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search i.fa {
-          font-size: inherit;
-          -webkit-text-stroke: 2px #fafafa; }
-        div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search input[type=text], div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search input[type=text] {
-          font-weight: 100;
-          border: none;
-          background-color: transparent;
-          outline: none;
-          border: none !important;
-          -webkit-box-shadow: none !important;
-          -moz-box-shadow: none !important;
-          box-shadow: none !important; }
-          div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search input[type=text]::placeholder, div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search input[type=text]::placeholder {
-            font-weight: 100; }
-    div.global-wrapper > main > header > div.master-header > div.top-header h1, div.global-wrapper > main > form > header > div.master-header > div.top-header h1 {
-      font-size: 1.8em;
-      padding: 8px 10px;
-      padding-top: 0px;
-      margin: 0px; }
-    div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu {
-      font-size: .8em;
-      padding-right: 10px; }
-      div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu div.dropdown a.dropdown-toggle:after, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu div.dropdown a.dropdown-toggle:after {
-        display: none; }
-      div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu div.dropdown div.dropdown-menu, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu div.dropdown div.dropdown-menu {
-        left: auto;
-        right: 0px;
-        padding: 10px; }
-  div.global-wrapper > main > header > div.master-header > div.action-header .page-title, div.global-wrapper > main > form > header > div.master-header > div.action-header .page-title {
-    font-weight: 100; }
-
-div.global-wrapper > main > div.main-content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper {
-  min-height: 0; }
-  div.global-wrapper > main > div.main-content-wrapper > div.sidebar-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.sidebar-wrapper {
-    background-color: #fafafa;
-    overflow: auto; }
-    div.global-wrapper > main > div.main-content-wrapper > div.sidebar-wrapper > div.sidebar, div.global-wrapper > main > form > div.main-content-wrapper > div.sidebar-wrapper > div.sidebar {
-      font-size: .9em;
-      width: 200px; }
-  div.global-wrapper > main > div.main-content-wrapper > div.main-content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content {
+div.global-wrapper > main {
+  max-width: calc(100vw - 225px); }
+  div.global-wrapper > main > form {
     min-height: 0px; }
-    div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.actions-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.actions-bar {
-      padding: 10px; }
-    div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper {
-      overflow: auto; }
-      div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content {
-        min-height: calc(100vh - 73px - 32px  - 2px); }
-        div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content.with-action-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content.with-action-bar {
-          min-height: calc(100vh - 73px - 32px - 51px - 2px); }
-      div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > footer, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > footer {
-        color: #eee;
+  div.global-wrapper > main > header > div.master-header, div.global-wrapper > main > form > header > div.master-header {
+    background-color: #fff; }
+    div.global-wrapper > main > header > div.master-header > div.top-header, div.global-wrapper > main > form > header > div.master-header > div.top-header {
+      background-color: #fafafa; }
+      div.global-wrapper > main > header > div.master-header > div.top-header nav, div.global-wrapper > main > form > header > div.master-header > div.top-header nav {
         font-size: .7em;
-        padding: 8px 10px; }
-  div.global-wrapper > main > div.main-content-wrapper > div.details-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.details-wrapper {
-    overflow: auto; }
+        padding: 5px 10px; }
+        div.global-wrapper > main > header > div.master-header > div.top-header nav ol, div.global-wrapper > main > form > header > div.master-header > div.top-header nav ol {
+          padding: 0px;
+          margin: 0px; }
+        div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search, div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search {
+          color: #999;
+          position: relative; }
+          div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search i.fa, div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search i.fa {
+            font-size: inherit;
+            -webkit-text-stroke: 2px #fafafa; }
+          div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search input[type=text], div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search input[type=text] {
+            font-weight: 100;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            border: none !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important; }
+            div.global-wrapper > main > header > div.master-header > div.top-header nav span.master-search input[type=text]::placeholder, div.global-wrapper > main > form > header > div.master-header > div.top-header nav span.master-search input[type=text]::placeholder {
+              font-weight: 100; }
+      div.global-wrapper > main > header > div.master-header > div.top-header h1, div.global-wrapper > main > form > header > div.master-header > div.top-header h1 {
+        font-size: 1.8em;
+        padding: 8px 10px;
+        padding-top: 0px;
+        margin: 0px; }
+      div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu {
+        font-size: .8em;
+        padding-right: 10px; }
+        div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu div.dropdown a.dropdown-toggle:after, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu div.dropdown a.dropdown-toggle:after {
+          display: none; }
+        div.global-wrapper > main > header > div.master-header > div.top-header div.right-menu div.dropdown div.dropdown-menu, div.global-wrapper > main > form > header > div.master-header > div.top-header div.right-menu div.dropdown div.dropdown-menu {
+          left: auto;
+          right: 0px;
+          padding: 10px; }
+    div.global-wrapper > main > header > div.master-header > div.action-header, div.global-wrapper > main > form > header > div.master-header > div.action-header {
+      overflow: hidden;
+      max-width: calc(100vw - 225px); }
+      div.global-wrapper > main > header > div.master-header > div.action-header .page-title, div.global-wrapper > main > form > header > div.master-header > div.action-header .page-title {
+        overflow: hidden;
+        font-weight: 100;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+  div.global-wrapper > main > div.main-content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper {
+    min-height: 0; }
+    div.global-wrapper > main > div.main-content-wrapper > div.sidebar-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.sidebar-wrapper {
+      background-color: #fafafa;
+      overflow: auto; }
+      div.global-wrapper > main > div.main-content-wrapper > div.sidebar-wrapper > div.sidebar, div.global-wrapper > main > form > div.main-content-wrapper > div.sidebar-wrapper > div.sidebar {
+        font-size: .9em;
+        width: 200px; }
+    div.global-wrapper > main > div.main-content-wrapper > div.main-content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content {
+      min-height: 0px; }
+      div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.actions-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.actions-bar {
+        padding: 10px; }
+      div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper {
+        overflow: auto; }
+        div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content {
+          min-height: calc(100vh - 73px - 32px  - 2px); }
+          div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content.with-action-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > div.content.with-action-bar {
+            min-height: calc(100vh - 73px - 32px - 51px - 2px); }
+        div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.content-wrapper > footer, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.content-wrapper > footer {
+          color: #eee;
+          font-size: .7em;
+          padding: 8px 10px; }
+    div.global-wrapper > main > div.main-content-wrapper > div.details-wrapper, div.global-wrapper > main > form > div.main-content-wrapper > div.details-wrapper {
+      overflow: auto; }
 
 .no-outline, .no-outline:focus {
   outline: none;

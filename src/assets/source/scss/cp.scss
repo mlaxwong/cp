@@ -29,8 +29,39 @@ a
     border-radius: 0;
 }
 
-.removecaret.dropdown-toggle::after {
+.card
+{
+    border-radius: 0px;
+    border: none;
+
+    .card-link
+    {
+        font-size: .9em;
+    }
+}
+
+.removecaret.dropdown-toggle::after 
+{
     display: none;
+}
+
+.tooltip
+{
+    text-align: justify;
+    font-size: .7em;
+    
+    .tooltip-inner
+    {
+        border-radius: 0;
+    }
+}
+
+.block-with-text 
+{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 
 div.global-wrapper
@@ -60,6 +91,8 @@ div.global-wrapper
 
     & > main
     {
+        max-width: calc(100vw - #{$globalSidebarWidth});
+
         & > form
         {
             min-height: 0px;
@@ -149,9 +182,15 @@ div.global-wrapper
 
                 & > div.action-header
                 {
+                    overflow: hidden;
+                    max-width: calc(100vw - #{$globalSidebarWidth});
+
                     .page-title
                     {
+                        overflow: hidden;
                         font-weight: 100;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                 }
             }

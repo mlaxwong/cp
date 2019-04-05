@@ -94,15 +94,20 @@
                             {% block headerActions %}{% endblock %}
                         {% endblock %} #}
                     </div>
-                    {%- if this.blocks['actions'] is defined -%}
+                    {%- if this.blocks['actions'] is defined or this.title -%}
                     <div class="action-header border-bottom container-fluid py-3">
-                        <div class="float-md-left mb-3 mb-md-0">
-                            <h3 class="page-title p-0 m-0">{{ this.title }}</h3>
+                        <div class="mb-3 mb-md-0 w-100">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h3 class="page-title p-0 m-0">{{ this.title }}</h3>
+                                </div>
+                                {%- if this.blocks['actions'] is defined -%}
+                                <div class="col-md-5 text-md-right mt-3 mt-md-0">
+                                    {{- this.blocks['actions']|raw -}}
+                                </div>
+                                {% endif %}
+                            </div>
                         </div>
-                        <div class="float-md-right">
-                            {{- this.blocks['actions']|raw -}}
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
                     {% endif %}
                 </div>
