@@ -18,6 +18,7 @@ class CPAsset extends AssetBundle
     public $depends = [
         \paw\bootstrap4\BootstrapAsset::class,
         \paw\cp\assets\FontAwsomeAsset::class,
+        \paw\cp\assets\NProgressAsset::class,
         \paw\cp\assets\StaticAsset::class,
     ];
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44e11daa5c250f343be58b8ec28824b7",
+    "content-hash": "06ae463d7837b1e22c7985bf05f30f34",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -605,6 +605,43 @@
             "type": "npm-asset-library"
         },
         {
+            "name": "npm-asset/nprogress",
+            "version": "0.2.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/nprogress/-/nprogress-0.2.0.tgz",
+                "reference": null,
+                "shasum": "cb8f34c53213d895723fcbab907e9422adbcafb1"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/rstacruz/nprogress/issues"
+                },
+                "npm-asset-main": "nprogress.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "https://github.com/rstacruz/nprogress.git"
+                },
+                "npm-asset-scripts": {
+                    "test": "mocha"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rico Sta. Cruz",
+                    "email": "hi@ricostacruz.com"
+                }
+            ],
+            "description": "Simple slim progress bars",
+            "homepage": "https://github.com/rstacruz/nprogress",
+            "time": "2015-05-13T10:31:26+00:00"
+        },
+        {
             "name": "nterms/yii2-mailqueue",
             "version": "0.0.14",
             "source": {
@@ -754,7 +791,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
