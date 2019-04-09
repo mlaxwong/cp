@@ -1,18 +1,15 @@
-import Vue from 'vue'
-import vueCustomElement from 'vue-custom-element'
-
 import upload from './_upload'
-
-Vue.use(vueCustomElement)
+import toasts from './_toasts'
 
 // custom custom element list
 const customElements = {
-  'paw-upload': upload
+  'paw-upload': upload,
+  'paw-toasts': toasts
 }
 
 // register custom element
 Object.entries(customElements).forEach(entry => {
   const handler = entry[0]
   const customElement = entry[1]
-  Vue.customElement(handler, customElement)
+  window.Vue.customElement(handler, customElement)
 })
