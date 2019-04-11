@@ -5,6 +5,7 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
+use paw\rbac\Role;
 use paw\user\models\User;
 use paw\user\models\LoginForm;
 
@@ -39,7 +40,7 @@ class UserController extends Controller
     
     public function actionLogin()
     {
-        $model = new LoginForm;
+        $model = new LoginForm(['access' => [Role::ROLE_ADMIN]]);
         
         if ($model->load(Yii::$app->request->post()) && $user = $model->submit())
         {

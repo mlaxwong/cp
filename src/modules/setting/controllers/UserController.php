@@ -4,6 +4,7 @@ namespace paw\cp\modules\setting\controllers;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use paw\rbac\Role;
 use paw\user\models\User;
 use paw\user\models\RegisterForm;
 use paw\user\models\ManageForm;
