@@ -722,16 +722,16 @@
         },
         {
             "name": "mlaxwong/paw-plugin-installer",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-plugin-installer.git",
-                "reference": "50944df57c23fb517adcbecbdf9291a59e154177"
+                "reference": "c849220099d56b65e00462d3fc7b5f922f6c81f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-plugin-installer/zipball/50944df57c23fb517adcbecbdf9291a59e154177",
-                "reference": "50944df57c23fb517adcbecbdf9291a59e154177",
+                "url": "https://api.github.com/repos/mlaxwong/paw-plugin-installer/zipball/c849220099d56b65e00462d3fc7b5f922f6c81f0",
+                "reference": "c849220099d56b65e00462d3fc7b5f922f6c81f0",
                 "shasum": ""
             },
             "require": {
@@ -757,7 +757,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-04-13T15:18:08+00:00"
+            "time": "2019-04-13T15:50:30+00:00"
         },
         {
             "name": "mlaxwong/paw-storage",
