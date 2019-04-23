@@ -8,7 +8,7 @@ class CPAsset extends AssetBundle
     public $sourcePath = '@pawcp_root/dist';
 
     public $css = [
-        'asset.cp.css'
+        'asset.cp.css',
     ];
 
     public $js = [
@@ -18,6 +18,7 @@ class CPAsset extends AssetBundle
     public $depends = [
         \paw\bootstrap4\BootstrapAsset::class,
         \paw\cp\assets\FontAwsomeAsset::class,
+        \paw\cp\assets\CKEditorAsset::class,
         \paw\cp\assets\StaticAsset::class,
     ];
 }

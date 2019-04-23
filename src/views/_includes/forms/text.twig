@@ -23,4 +23,9 @@
     {%- if readonly is defined and readonly %} readonly {% endif %}
     {%- if title is defined %} title="{{ title }}"{% endif %}
     {%- if placeholder is defined %} placeholder="{{ placeholder }}"{% endif %}
+    {%- if options is defined -%}
+        {%- for key, value in options -%}
+        {{ key }}="{{ value }}"
+        {%- endfor -%}
+    {%- endif -%}
     />

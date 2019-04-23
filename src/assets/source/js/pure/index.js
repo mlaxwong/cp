@@ -3,7 +3,9 @@
 
   const features = [
     require('./_data-method'),
-    require('./_confirm')
+    require('./_confirm'),
+    require('./_val_follower'),
+    require('./_strtr')
   ]
 
   const init = (paw) => {

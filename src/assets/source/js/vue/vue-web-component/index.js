@@ -1,10 +1,12 @@
 import upload from './_upload'
 import toasts from './_toasts'
+import ckeditor from './_ckeditor'
 
 // custom custom element list
 const customElements = {
   'paw-upload': upload,
-  'paw-toasts': toasts
+  'paw-toasts': toasts,
+  'paw-ckeditor': ckeditor
 }
 
 // register custom element
