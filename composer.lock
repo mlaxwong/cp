@@ -685,16 +685,16 @@
         },
         {
             "name": "mlaxwong/paw-assets-fontawesome",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-assets-fontawesome.git",
-                "reference": "8ce0eb8a7531882d4428f125ce541122254191fa"
+                "reference": "dc499ee999836ab732113dab8c6702bee7e1903d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-assets-fontawesome/zipball/8ce0eb8a7531882d4428f125ce541122254191fa",
-                "reference": "8ce0eb8a7531882d4428f125ce541122254191fa",
+                "url": "https://api.github.com/repos/mlaxwong/paw-assets-fontawesome/zipball/dc499ee999836ab732113dab8c6702bee7e1903d",
+                "reference": "dc499ee999836ab732113dab8c6702bee7e1903d",
                 "shasum": ""
             },
             "require": {
@@ -703,7 +703,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "paw\\assets\\fontawesome\\": "src/"
+                    "paw\\assets\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -716,7 +716,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-04-24T10:21:51+00:00"
+            "time": "2019-04-24T10:50:19+00:00"
         },
         {
             "name": "mlaxwong/paw-bootstrap4",
