@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "485bfae088d6d5bc5e2878f78c1565da",
+    "content-hash": "cabddb74fc35a2aaba22057733b2c10e",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -684,6 +684,41 @@
             "time": "2019-04-12T16:34:28+00:00"
         },
         {
+            "name": "mlaxwong/paw-assets-fontawesome",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlaxwong/paw-assets-fontawesome.git",
+                "reference": "8ce0eb8a7531882d4428f125ce541122254191fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlaxwong/paw-assets-fontawesome/zipball/8ce0eb8a7531882d4428f125ce541122254191fa",
+                "reference": "8ce0eb8a7531882d4428f125ce541122254191fa",
+                "shasum": ""
+            },
+            "require": {
+                "npm-asset/font-awesome": "^5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "paw\\assets\\fontawesome\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mlax Wong",
+                    "email": "mlaxwong@gmail.com"
+                }
+            ],
+            "time": "2019-04-24T10:21:51+00:00"
+        },
+        {
             "name": "mlaxwong/paw-bootstrap4",
             "version": "1.0.0",
             "source": {
@@ -997,16 +1032,16 @@
         },
         {
             "name": "npm-asset/font-awesome",
-            "version": "5.7.2",
+            "version": "5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "1cf1062e0cfda5e9b5b2cac7844721b345e1a9c5"
+                "reference": "299abb1fb101f4e1cfd1d2fccc461782ff84b13d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/1cf1062e0cfda5e9b5b2cac7844721b345e1a9c5",
-                "reference": "1cf1062e0cfda5e9b5b2cac7844721b345e1a9c5",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/299abb1fb101f4e1cfd1d2fccc461782ff84b13d",
+                "reference": "299abb1fb101f4e1cfd1d2fccc461782ff84b13d",
                 "shasum": ""
             },
             "type": "npm-asset-library"
