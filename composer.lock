@@ -868,22 +868,23 @@
         },
         {
             "name": "mlaxwong/paw-twig",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-twig.git",
-                "reference": "d9f9ecc7148356cfa26acc5db6f7ecaa27a71c5c"
+                "reference": "512c83c32b2565df57123a67889b1012f9c6253c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/d9f9ecc7148356cfa26acc5db6f7ecaa27a71c5c",
-                "reference": "d9f9ecc7148356cfa26acc5db6f7ecaa27a71c5c",
+                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/512c83c32b2565df57123a67889b1012f9c6253c",
+                "reference": "512c83c32b2565df57123a67889b1012f9c6253c",
                 "shasum": ""
             },
             "require": {
                 "mlaxwong/paw-assets-ckeditor5": "^1.0",
                 "mlaxwong/paw-assets-fontawesome": "^1.0",
-                "mlaxwong/paw-bootstrap4": "^1.0"
+                "mlaxwong/paw-bootstrap4": "^1.0",
+                "mlaxwong/paw-web-component": "^1.0"
             },
             "type": "paw-plugin",
             "autoload": {
@@ -901,7 +902,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-04-25T07:27:20+00:00"
+            "time": "2019-04-25T10:13:44+00:00"
         },
         {
             "name": "mlaxwong/paw-user",
@@ -937,6 +938,41 @@
                 }
             ],
             "time": "2019-04-24T15:57:09+00:00"
+        },
+        {
+            "name": "mlaxwong/paw-web-component",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlaxwong/paw-web-component.git",
+                "reference": "7aac8d75458df889300404d35d5a6d9bb8073b4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlaxwong/paw-web-component/zipball/7aac8d75458df889300404d35d5a6d9bb8073b4b",
+                "reference": "7aac8d75458df889300404d35d5a6d9bb8073b4b",
+                "shasum": ""
+            },
+            "require": {
+                "mlaxwong/paw": "^1.1"
+            },
+            "type": "paw-plugin",
+            "autoload": {
+                "psr-4": {
+                    "paw\\webcomponent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mlax Wong",
+                    "email": "mlaxwong@gmail.com"
+                }
+            ],
+            "time": "2019-04-25T10:10:05+00:00"
         },
         {
             "name": "npm-asset/bootstrap",

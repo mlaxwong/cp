@@ -1,12 +1,12 @@
-{% macro csrf() %}
+{% macro input_csrf() %}
     {% import _self as forms %}
-    {{ forms.hidden({
+    {{ forms.input_hidden({
         name: app.request.csrfParam,
         value: app.request.csrfToken,
     }) }}
 {% endmacro %}
 
-{% macro hidden(config) %}
+{% macro input_hidden(config) %}
     {% include "@pawcp_base/views/_includes/forms/hidden.twig" with config only %}
 {% endmacro %}
 
@@ -14,7 +14,7 @@
     {% include "@pawcp_base/views/_includes/forms/text.twig" with config only %}
 {% endmacro %}
 
-{% macro upload(config) %}
+{% macro input_upload(config) %}
 {% include "@pawcp_base/views/_includes/forms/upload.twig" with config only %}
 {% endmacro %}
 
@@ -23,16 +23,16 @@
     {% include "@pawcp_base/views/_includes/forms/field.twig" with config|merge({ input: input }) only %}
 {% endmacro %}
 
-{% macro textField(config = {}) %}
+{% macro field_text(config = {}) %}
     {% import _self as forms %}
     {% set input = forms.text(config) %}
     {{ forms.field(config, input) }}
 {% endmacro %}
 
 
-{% macro activeTextField(model, attribute, config = {}) %}
+{% macro activefield_text(model, attribute, config = {}) %}
     {% import _self as forms %}
-    {{ forms.textField({
+    {{ forms.field_text({
         id: config.id is defined ? config.id : attribute,
         label: model.getAttributeLabel(attribute),
         name: html.getInputName(model, attribute),
