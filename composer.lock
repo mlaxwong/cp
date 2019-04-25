@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e76f8dcd4388ca8c0e797213b1a8e002",
+    "content-hash": "e6d50e66c4e9f7296af861407a6ba505",
     "packages": [
         {
             "name": "bower-asset/inputmask",
@@ -684,6 +684,42 @@
             "time": "2019-04-24T15:54:10+00:00"
         },
         {
+            "name": "mlaxwong/paw-assets-ckeditor5",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlaxwong/paw-assets-ckeditor5.git",
+                "reference": "9ab78d6e4c074ed1f8d1a67d4d4b828ecbd00f54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlaxwong/paw-assets-ckeditor5/zipball/9ab78d6e4c074ed1f8d1a67d4d4b828ecbd00f54",
+                "reference": "9ab78d6e4c074ed1f8d1a67d4d4b828ecbd00f54",
+                "shasum": ""
+            },
+            "require": {
+                "mlaxwong/paw": "^1.1",
+                "npm-asset/ckeditor--ckeditor5-build-classic": "^12.1"
+            },
+            "type": "paw-plugin",
+            "autoload": {
+                "psr-4": {
+                    "paw\\assets\\ckeditor5\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mlax Wong",
+                    "email": "mlaxwong@gmail.com"
+                }
+            ],
+            "time": "2019-04-25T07:07:11+00:00"
+        },
+        {
             "name": "mlaxwong/paw-assets-fontawesome",
             "version": "1.0.1",
             "source": {
@@ -832,19 +868,29 @@
         },
         {
             "name": "mlaxwong/paw-twig",
-            "version": "1.0.0",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-twig.git",
-                "reference": "171f37c33927bf7359e862cb894e5a60eb905e05"
+                "reference": "d9f9ecc7148356cfa26acc5db6f7ecaa27a71c5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/171f37c33927bf7359e862cb894e5a60eb905e05",
-                "reference": "171f37c33927bf7359e862cb894e5a60eb905e05",
+                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/d9f9ecc7148356cfa26acc5db6f7ecaa27a71c5c",
+                "reference": "d9f9ecc7148356cfa26acc5db6f7ecaa27a71c5c",
                 "shasum": ""
             },
-            "type": "library",
+            "require": {
+                "mlaxwong/paw-assets-ckeditor5": "^1.0",
+                "mlaxwong/paw-assets-fontawesome": "^1.0",
+                "mlaxwong/paw-bootstrap4": "^1.0"
+            },
+            "type": "paw-plugin",
+            "autoload": {
+                "psr-4": {
+                    "paw\\twig\\": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -855,7 +901,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-04-24T14:24:07+00:00"
+            "time": "2019-04-25T07:27:20+00:00"
         },
         {
             "name": "mlaxwong/paw-user",
@@ -1057,6 +1103,67 @@
                 "vanilla js"
             ],
             "time": "2019-04-10T08:35:28+00:00"
+        },
+        {
+            "name": "npm-asset/ckeditor--ckeditor5-build-classic",
+            "version": "12.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@ckeditor/ckeditor5-build-classic/-/ckeditor5-build-classic-12.1.0.tgz",
+                "reference": null,
+                "shasum": "bd8127b8f11ce0a33a3dd8893546bbed5ab5fd30"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/ckeditor/ckeditor5-build-classic/issues"
+                },
+                "npm-asset-main": "./build/ckeditor.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/ckeditor/ckeditor5-build-classic.git"
+                },
+                "npm-asset-scripts": {
+                    "build": "webpack --mode production",
+                    "lint": "eslint --quiet '**/*.js'",
+                    "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
+                },
+                "npm-asset-engines": {
+                    "node": ">=8.0.0",
+                    "npm": ">=5.7.1"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "url": "http://cksource.com/"
+                }
+            ],
+            "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+            "homepage": "https://ckeditor.com/ckeditor-5",
+            "keywords": [
+                "ckeditor",
+                "ckeditor 5",
+                "ckeditor5",
+                "ckeditor5-build",
+                "collaboration",
+                "collaborative",
+                "contentEditable",
+                "editing",
+                "editor",
+                "framework",
+                "html",
+                "operational transformation",
+                "ot",
+                "real-time",
+                "rich text",
+                "wysiwyg"
+            ],
+            "time": "2019-04-10T09:22:37+00:00"
         },
         {
             "name": "npm-asset/font-awesome",

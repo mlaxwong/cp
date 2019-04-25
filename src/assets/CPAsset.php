@@ -16,9 +16,7 @@ class CPAsset extends AssetBundle
     ];
 
     public $depends = [
-        \paw\bootstrap4\BootstrapAsset::class,
-        \paw\assets\FontAwesomeAsset::class,
-        \paw\cp\assets\CKEditorAsset::class,
         \paw\cp\assets\StaticAsset::class,
+        \paw\twig\assets\TwigAsset::class,
     ];
 }
