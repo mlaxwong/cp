@@ -1,13 +1,13 @@
 <?php
 namespace paw\cp\controllers;
 
+use paw\rbac\Role;
+use paw\user\models\LoginForm;
+use paw\user\models\User;
 use Yii;
-use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
-use paw\rbac\Role;
-use paw\user\models\User;
-use paw\user\models\LoginForm;
+use yii\web\Controller;
 
 class UserController extends Controller
 {
@@ -25,7 +25,10 @@ class UserController extends Controller
                     ],
                 ],
                 'denyCallback' => function ($rule, $action) {
-                    if ($action->id == 'login') return $this->redirect(['/admin']);
+                    if ($action->id == 'login') {
+                        return $this->redirect(['/admin']);
+                    }
+
                     // throw new ForbiddenHttpException("You are not allowed to perform this action.");
                 },
             ],
@@ -37,13 +40,12 @@ class UserController extends Controller
             ],
         ];
     }
-    
+
     public function actionLogin()
     {
         $model = new LoginForm(['access' => [Role::ROLE_ADMIN]]);
-        
-        if ($model->load(Yii::$app->request->post()) && $user = $model->submit())
-        {
+
+        if ($model->load(Yii::$app->request->post()) && $user = $model->submit()) {
             Yii::$app->user->login($user);
             return $this->redirect(['/admin']);
         }
