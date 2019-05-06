@@ -831,16 +831,16 @@
         },
         {
             "name": "mlaxwong/paw-storage",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-storage.git",
-                "reference": "e33bb388f65ccd9ac46af5370f9c31de5d675b13"
+                "reference": "98d0ef6863e241eca989eebabb774235f16c0c4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-storage/zipball/e33bb388f65ccd9ac46af5370f9c31de5d675b13",
-                "reference": "e33bb388f65ccd9ac46af5370f9c31de5d675b13",
+                "url": "https://api.github.com/repos/mlaxwong/paw-storage/zipball/98d0ef6863e241eca989eebabb774235f16c0c4e",
+                "reference": "98d0ef6863e241eca989eebabb774235f16c0c4e",
                 "shasum": ""
             },
             "require": {
@@ -863,20 +863,20 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-04-24T15:58:55+00:00"
+            "time": "2019-05-06T03:12:01+00:00"
         },
         {
             "name": "mlaxwong/paw-twig",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-twig.git",
-                "reference": "76e22a22bdf782f880a5001c1dd4be710f4ecdb8"
+                "reference": "4de93f30cf645934824a367f90a50f4dbc56ecd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/76e22a22bdf782f880a5001c1dd4be710f4ecdb8",
-                "reference": "76e22a22bdf782f880a5001c1dd4be710f4ecdb8",
+                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/4de93f30cf645934824a367f90a50f4dbc56ecd3",
+                "reference": "4de93f30cf645934824a367f90a50f4dbc56ecd3",
                 "shasum": ""
             },
             "require": {
@@ -901,7 +901,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-05-03T15:58:26+00:00"
+            "time": "2019-05-06T03:12:57+00:00"
         },
         {
             "name": "mlaxwong/paw-user",
