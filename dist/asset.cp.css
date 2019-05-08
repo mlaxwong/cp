@@ -116,6 +116,7 @@ div.global-wrapper > main {
         font-size: .9em;
         width: 200px; }
     div.global-wrapper > main > div.main-content-wrapper > div.main-content, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content {
+      width: 100%;
       min-height: 0px; }
       div.global-wrapper > main > div.main-content-wrapper > div.main-content > div.actions-bar, div.global-wrapper > main > form > div.main-content-wrapper > div.main-content > div.actions-bar {
         padding: 10px; }
