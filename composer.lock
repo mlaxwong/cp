@@ -744,16 +744,16 @@
         },
         {
             "name": "mlaxwong/paw-assets-ckeditor5",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-assets-ckeditor5.git",
-                "reference": "9ab78d6e4c074ed1f8d1a67d4d4b828ecbd00f54"
+                "reference": "e1a3b51c3b75069a3993772d3c3742660872bc1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-assets-ckeditor5/zipball/9ab78d6e4c074ed1f8d1a67d4d4b828ecbd00f54",
-                "reference": "9ab78d6e4c074ed1f8d1a67d4d4b828ecbd00f54",
+                "url": "https://api.github.com/repos/mlaxwong/paw-assets-ckeditor5/zipball/e1a3b51c3b75069a3993772d3c3742660872bc1f",
+                "reference": "e1a3b51c3b75069a3993772d3c3742660872bc1f",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +776,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-04-25T07:07:11+00:00"
+            "time": "2019-05-15T10:49:23+00:00"
         },
         {
             "name": "mlaxwong/paw-assets-fontawesome",
@@ -815,16 +815,16 @@
         },
         {
             "name": "mlaxwong/paw-bootstrap4",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-bootstrap4.git",
-                "reference": "05f447b6d0890d1423ace2dd1e22b449e7d71976"
+                "reference": "9256a89af80cbe7dda748cc64f1a899e0cd2bdae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-bootstrap4/zipball/05f447b6d0890d1423ace2dd1e22b449e7d71976",
-                "reference": "05f447b6d0890d1423ace2dd1e22b449e7d71976",
+                "url": "https://api.github.com/repos/mlaxwong/paw-bootstrap4/zipball/9256a89af80cbe7dda748cc64f1a899e0cd2bdae",
+                "reference": "9256a89af80cbe7dda748cc64f1a899e0cd2bdae",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +847,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-05-03T13:55:57+00:00"
+            "time": "2019-05-15T10:50:51+00:00"
         },
         {
             "name": "mlaxwong/paw-plugin-installer",
@@ -926,16 +926,16 @@
         },
         {
             "name": "mlaxwong/paw-twig",
-            "version": "1.0.3",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-twig.git",
-                "reference": "16ea777d9d5b58564e9f9fc89d56fa880613ebd9"
+                "reference": "89f98e33da62cd01d7a69a7ade001199f2f3283a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/16ea777d9d5b58564e9f9fc89d56fa880613ebd9",
-                "reference": "16ea777d9d5b58564e9f9fc89d56fa880613ebd9",
+                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/89f98e33da62cd01d7a69a7ade001199f2f3283a",
+                "reference": "89f98e33da62cd01d7a69a7ade001199f2f3283a",
                 "shasum": ""
             },
             "require": {
@@ -960,7 +960,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-05-08T16:52:44+00:00"
+            "time": "2019-05-15T12:27:46+00:00"
         },
         {
             "name": "mlaxwong/paw-user",
@@ -999,16 +999,16 @@
         },
         {
             "name": "mlaxwong/paw-webcomponent",
-            "version": "1.0.7",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-webcomponent.git",
-                "reference": "43584b0cdcf90546ab0c82c9d729bfa473e03f2f"
+                "reference": "ef1093eb1cd90487a635679f8ac8a1bf6763e3e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-webcomponent/zipball/43584b0cdcf90546ab0c82c9d729bfa473e03f2f",
-                "reference": "43584b0cdcf90546ab0c82c9d729bfa473e03f2f",
+                "url": "https://api.github.com/repos/mlaxwong/paw-webcomponent/zipball/ef1093eb1cd90487a635679f8ac8a1bf6763e3e0",
+                "reference": "ef1093eb1cd90487a635679f8ac8a1bf6763e3e0",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +1032,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-05-15T10:31:22+00:00"
+            "time": "2019-05-15T12:29:10+00:00"
         },
         {
             "name": "npm-asset/ckeditor--ckeditor5-build-classic",
