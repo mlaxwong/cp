@@ -5,8 +5,6 @@ use yii\web\AssetBundle;
 
 class CPAsset extends AssetBundle
 {
-    public $sourcePath = '@pawcp_root/dist';
-
     public $css = [
         'asset.cp.css',
     ];
@@ -19,4 +17,10 @@ class CPAsset extends AssetBundle
         \paw\cp\assets\StaticAsset::class,
         \paw\twig\assets\TwigAsset::class,
     ];
+
+    public function init()
+    {
+        parent::init();
+        $this->sourcePath = dirname(dirname(__DIR__)) . '/dist';
+    }
 }
