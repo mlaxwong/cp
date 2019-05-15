@@ -1,11 +1,11 @@
 <?php
 namespace paw\cp;
 
+use paw\rbac\Role;
 use Yii;
 use yii\filters\AccessControl;
 use yii\helpers\ArrayHelper;
 use yii\web\ErrorHandler;
-use paw\rbac\Role;
 
 class Module extends \paw\cp\base\Module
 {
@@ -28,12 +28,12 @@ class Module extends \paw\cp\base\Module
                         'roles' => ['?'],
                         'controllers' => ['admin/user'],
                         'actions' => ['login'],
-                    ]
+                    ],
                 ],
             ],
         ];
     }
-    
+
     public function init()
     {
         parent::init();
@@ -46,7 +46,7 @@ class Module extends \paw\cp\base\Module
                 'errorHandler' => [
                     'class' => ErrorHandler::className(),
                     'errorAction' => 'admin/default/error',
-                ]
+                ],
             ],
         ]);
 
