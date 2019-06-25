@@ -697,16 +697,16 @@
         },
         {
             "name": "mlaxwong/paw",
-            "version": "1.1.16",
+            "version": "1.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw.git",
-                "reference": "87a256db802fb9167ce818a5f367308c4c08b3f2"
+                "reference": "2addc28daa67613579ba7883d835c20fc531ecfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/87a256db802fb9167ce818a5f367308c4c08b3f2",
-                "reference": "87a256db802fb9167ce818a5f367308c4c08b3f2",
+                "url": "https://api.github.com/repos/mlaxwong/paw/zipball/2addc28daa67613579ba7883d835c20fc531ecfa",
+                "reference": "2addc28daa67613579ba7883d835c20fc531ecfa",
                 "shasum": ""
             },
             "require": {
@@ -740,7 +740,7 @@
                 }
             ],
             "description": "Paw Yii2 Framework",
-            "time": "2019-05-15T10:20:29+00:00"
+            "time": "2019-06-25T14:25:10+00:00"
         },
         {
             "name": "mlaxwong/paw-assets-ckeditor5",
@@ -926,16 +926,16 @@
         },
         {
             "name": "mlaxwong/paw-twig",
-            "version": "1.0.5",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-twig.git",
-                "reference": "89f98e33da62cd01d7a69a7ade001199f2f3283a"
+                "reference": "b6fcb6b32b6b4fc3e1aa56038445efef70dc7f05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/89f98e33da62cd01d7a69a7ade001199f2f3283a",
-                "reference": "89f98e33da62cd01d7a69a7ade001199f2f3283a",
+                "url": "https://api.github.com/repos/mlaxwong/paw-twig/zipball/b6fcb6b32b6b4fc3e1aa56038445efef70dc7f05",
+                "reference": "b6fcb6b32b6b4fc3e1aa56038445efef70dc7f05",
                 "shasum": ""
             },
             "require": {
@@ -960,20 +960,20 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-05-15T12:27:46+00:00"
+            "time": "2019-06-25T14:34:20+00:00"
         },
         {
             "name": "mlaxwong/paw-user",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlaxwong/paw-user.git",
-                "reference": "aba19c03fb7aafd02408f04a761a96e1e92f4df2"
+                "reference": "0d0f727240c8b2af71c301f2ec6259eecfe74365"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlaxwong/paw-user/zipball/aba19c03fb7aafd02408f04a761a96e1e92f4df2",
-                "reference": "aba19c03fb7aafd02408f04a761a96e1e92f4df2",
+                "url": "https://api.github.com/repos/mlaxwong/paw-user/zipball/0d0f727240c8b2af71c301f2ec6259eecfe74365",
+                "reference": "0d0f727240c8b2af71c301f2ec6259eecfe74365",
                 "shasum": ""
             },
             "require": {
@@ -995,7 +995,7 @@
                     "email": "mlaxwong@gmail.com"
                 }
             ],
-            "time": "2019-05-15T10:29:53+00:00"
+            "time": "2019-06-25T14:28:18+00:00"
         },
         {
             "name": "mlaxwong/paw-webcomponent",
